@@ -27,8 +27,9 @@
                           <label class="label">
                               <span class="label-text">Description :</span>
                           </label>
-                          <input type="text" name="description" placeholder="description" class="input input-bordered "
-                              style="width: 300px;" />
+                          {{-- <input type="text" name="description" placeholder="description" class="input input-bordered "
+                              style="width: 300px;" /> --}}
+                              <textarea name="description"  class="textarea textarea-bordered" placeholder="description"></textarea>
                       </div>
                       <div class="form-control  max-w-xs">
                           <label class="label">
@@ -79,7 +80,10 @@
                     </select>
                 </div>
                <br><br>
-               <input type="submit" class="btn btn-outline btn-primary btn-sm" value="Add Product">
+                <div class="flex justify-between">
+                  <input type="submit" class="btn btn-outline btn-primary btn-sm" value="Add Product">
+                  <button onclick="window.location.href='{{route('products')}}'" type="button" class='btn btn-error btn-outline btn-sm mx-4' >Back</button>
+                </div>
                       </div>
                     
                 </div>

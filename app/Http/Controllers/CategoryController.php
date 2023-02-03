@@ -36,8 +36,21 @@ class CategoryController extends Controller
         return redirect('/categories');
     }
 
-    public function edit()
+    public function edit(Request $rqst)
     {
-        
+        $id =  array_key_first($rqst->all());
+        $category = Category::find($id);
+        //dd($category);
+        return view('category.categoryEdit')->with('category',$category);
+    }
+
+    public function postedit(Request $rqst)
+    {
+        $product = Category::find($rqst->id);
+        $product->name = $rqst->name;
+        $product->image = $rqst->image;
+        $product->description = $rqst->description;
+        $product->update();
+        return redirect('/categories');
     }
 }

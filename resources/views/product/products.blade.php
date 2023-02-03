@@ -1,11 +1,14 @@
 @extends('dashboard')
 @section('content')
-
+<head>
+ 
+</head>
 <div class="overflow-x-auto w-full">
   <div class="flex justify-between mb-4">
-    <button onclick="window.location.href='{{route('productAdd')}}'" class="btn btn-outline btn-success btn-sm ">Add Product</button>
+    <button onclick="window.location.href='{{route('productAdd')}}'" class="btn btn-outline btn-success btn-sm ">Add Cooking Item</button>
   </div>
-  <table class="table w-full">
+  
+  <table class="table table-compact  w-full">
     <!-- head -->
     <thead>
       <tr>  
@@ -85,8 +88,13 @@
  
     
     </tbody>
-    
+   
   </table>
+  <br>
+
+  
+    {{ $products->links('pagination::tailwind') }}
+
 </div>
 
 @endsection

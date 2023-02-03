@@ -4,6 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\LocationController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\DashboardController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -43,8 +47,41 @@ Route::middleware('auth')->group(function () {
     Route::get('/categoryAdd', [CategoryController::class, 'addCategory'])->name('categoryAdd');
     Route::post('/categoriesAdd', [CategoryController::class, 'postaddCategory']);
     Route::get('/categoryDelete/{id}', [CategoryController::class, 'delete'])->name('categoryDelete');
-    Route::get('/categoryEdit', [ProductController::class, 'edit'])->name('categoryEdit');
-    Route::post('/categoriesEdit', [ProductController::class, 'postedit']);
+    Route::get('/categoryEdit', [CategoryController::class, 'edit'])->name('categoryEdit');
+    Route::post('/categoriesEdit', [CategoryController::class, 'postedit']);
+
+
+    // Users :
+    Route::get('/users', [UserController::class, 'view'])->name('users');
+    Route::get('/userAdd', [UserController::class, 'addUser'])->name('userAdd');
+    Route::post('api/fetch-places', [UserController::class, 'fetchPlace']);
+    Route::post('/usersAdd', [UserController::class, 'postaddUser']);
+    
+    // Address :
+    //    Country
+    Route::get('/locations', [LocationController::class, 'viewCountry'])->name('locations');
+    Route::get('/countryEdit', [LocationController::class, 'editCountry'])->name('countryEdit');
+    Route::post('/countriesEdit', [LocationController::class, 'posteditCountry']);
+    Route::get('/countryDelete', [LocationController::class, 'deleteCountry'])->name('countryDelete');
+    Route::post('/countriesDelete', [LocationController::class, 'postdeleteCountry']);
+    Route::get('/countryAdd', [LocationController::class, 'addCountry'])->name('countryAdd');
+    Route::post('/countriesAdd', [LocationController::class, 'postaddCountry']);
+
+    //city :
+    Route::get('/cityAdd', [LocationController::class, 'addCity'])->name('cityAdd');
+    Route::post('/citiesAdd', [LocationController::class, 'postaddCity']);
+
+    //Place :
+    Route::get('/placeAdd', [LocationController::class, 'addPlace'])->name('placeAdd');
+    Route::post('api/fetch-cities', [LocationController::class, 'fetchCity']);
+    Route::post('/placesAdd', [LocationController::class, 'postaddPlace']);
+
+
+    //Dashboard :
+    Route::get('/dashboards', [DashboardController::class, 'view'])->name('dashboards');
+    
+
+    
     
 });
 

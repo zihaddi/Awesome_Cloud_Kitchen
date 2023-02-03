@@ -1,18 +1,18 @@
 @extends('dashboard')
 @section('content')
 
-<div class="overflow-x-auto w-full">
+<div class="overflow-x-auto ml-20 w-full">
   <div class="flex justify-between mb-4">
     <button onclick="window.location.href='{{route('categoryAdd')}}'" class="btn btn-outline btn-success btn-sm ">Add Category</button>
   </div>
-  <table class="table w-full">
+  <table class="table table-compact  w-full">
     <!-- head -->
     <thead>
       <tr>  
         <th>Id</th>
         <th>Image</th>
         <th>Name</th>
-        <th>Description</th>
+        <th>Operations</th>
         <th></th>
       </tr>
     </thead>
@@ -42,11 +42,7 @@
           <div class="font-bold">{{ $product->name }}</div>
         </div>
       </td>
-      <td>
-        <div>
-          <div class="font-bold">{{ $product->description}} items</div>
-        </div>
-      </td>
+ 
      
         <th>
        

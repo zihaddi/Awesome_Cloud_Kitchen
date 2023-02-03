@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function view()
     {
-        $products = Product::all();
+        $products = Product::paginate(2);
         foreach($products as $product)
         {
             $vendor = User::where('id' , $product->vid)->first();
