@@ -65,13 +65,7 @@
                                   value='{{ $product->quantity }}' style="width: 300px;height: 30px;" />
                           </div>
   
-                          <div class="form-control  max-w-xs">
-                              <label class="label">
-                                  <span class="label-text">Unit Price :</span>
-                              </label>
-                              <input type="text" name="unit_price" placeholder="price" class="input input-bordered "
-                                  value='{{ $product->unit_price }}' style="width: 300px;height: 30px;" />
-                          </div>
+                         
                         
                       <br><br>
                     <div class="flex justify-between">

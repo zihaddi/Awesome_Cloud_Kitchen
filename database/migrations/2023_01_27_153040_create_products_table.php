@@ -22,7 +22,8 @@ return new class extends Migration
             $table->string('image');
             $table->string('description')->nullable();
             $table->integer('quantity');
-            $table->integer('unit_price');
+            $table->integer('buyingPrice');
+            $table->integer('sellingPrice');
             $table->integer('discount')->nullable();
             $table->integer('ranking')->nullable();
             $table->foreign('caid')->references('id')->on('categories');

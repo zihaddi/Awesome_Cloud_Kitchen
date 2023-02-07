@@ -1,8 +1,6 @@
 @extends('dashboard')
 @section('content')
-<head>
- 
-</head>
+
 <div class="overflow-x-auto w-full">
   <div class="flex justify-between mb-4">
     <button onclick="window.location.href='{{route('productAdd')}}'" class="btn btn-outline btn-success btn-sm ">Add Cooking Item</button>
@@ -16,7 +14,8 @@
         <th>Image</th>
         <th>Name</th>
         <th>Quantity</th>
-        <th>UNIT PRICE</th>
+        <th>BUYING PRICE</th>
+        <th>SELLING PRICE</th>
         <th>VENDOR</th>
         <th></th>
       </tr>
@@ -55,7 +54,12 @@
       </td>
       <td>
         <div>
-          <div class="font-bold">{{ $product->unit_price}} BDT</div>
+          <div class="font-bold">{{ $product->buyingPrice}} BDT</div>
+        </div>
+      </td>
+      <td>
+        <div>
+          <div class="font-bold">{{ $product->sellingPrice}} BDT</div>
         </div>
       </td>
       <td>
@@ -69,7 +73,7 @@
           
            {{-- <label onclick="func1()"    class="btn">
             {{ $product->id }}</label>              --}}
-            <label onclick="Swal.fire({title: '{{ $product->name }}',type: 'info',html:
+            {{-- <label onclick="Swal.fire({title: '{{ $product->name }}',type: 'info',html:
                 '<h2><b>Category</b>: {{$product->category_name}}</h2>' +
                 '<p><b>Quantity</b> : {{ $product->quantity }} items</p>' +
                 '<p><b>Price</b> : {{ $product->unit_price }} Taka</p>'+'<br>'+
@@ -77,7 +81,8 @@
                 '<h1><b>Vendor</b> : {{ $product->vendor_name }} </h1>'+
                 '<p><b>Description</b> : {{ $product->description }} </p>'})"    
              class="btn btn-info btn-xs">
-              Details</label>  
+              Details</label>   --}}
+              <button onclick="window.location.href='{{route('productDetails',$product->id)}}'" class='btn btn-info btn-xs'>Details</button></div>
             <button onclick="window.location.href='{{route('productEdit',$product->id)}}'" class='btn btn-secondary btn-xs'>Edit</button></div>
 
             <button onclick="window.location.href='{{route('productDelete',$product->id)}}'" class='btn btn-error btn-xs'>Delete</button></div>

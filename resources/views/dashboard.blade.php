@@ -24,19 +24,28 @@
                                         <a href="{{ route('dashboards') }}" class="btn btn-ghost ml-2 btn-sm  mt-4" aria-current="page"> 
                                            <p class=" mb-1" style="font-size: 12px">> Dashboard</p> 
                                         </a>
-                                        <a href="{{ route('users') }}" class="btn btn-ghost btn-sm ml-2 mt-4" aria-current="page"> 
+                                        <a href="{{ route('users') }}" class="btn btn-ghost btn-sm ml-2 mt-3" aria-current="page"> 
                                             <p class=" mb-1" style="font-size: 12px">> Users</p> 
                                          </a>
                                         <div class="dropdown text-sm dropdown-hover">
-                                            <label style="font-size: 12px" tabindex="0" class="btn btn-ghost m-1 ">>
-                                                Product Manage</label>
+                                            <label style="font-size: 12px" tabindex="0" class="btn btn-ghost mx-1 ">>
+                                                Cook Manage</label>
                                             <ul tabindex="0"
                                                 class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
                                                 <li><a href="{{ route('categories') }}">Categories</a></li>
                                                 <li><a href="{{ route('products') }}">Cooking Items</a></li>
                                             </ul>
                                         </div>
-                                        <a href="{{ route('locations') }}" class="btn btn-ghost btn-sm ml-2 mt-4" aria-current="page"> 
+                                        <div class="dropdown text-sm dropdown-hover">
+                                            <label style="font-size: 12px" tabindex="0" class="btn btn-ghost mx-1 ">>
+                                                Ingredient Manage</label>
+                                            <ul tabindex="0"
+                                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                <li><a href="{{ route('ingredientCategories') }}">Categories</a></li>
+                                                <li><a href="{{ route('ingredients') }}">Ingredient Items</a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="{{ route('locations') }}" class="btn btn-ghost btn-sm ml-2 " aria-current="page"> 
                                             <p class=" mb-1" style="font-size: 12px">> Location Manage</p> 
                                          </a>
                                         {{-- <a href="{{ route('locations') }}" class="btn btn-ghost btn-sm  mt-4"

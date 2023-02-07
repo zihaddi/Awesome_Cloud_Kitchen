@@ -7,7 +7,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\IngredientController;
+use App\Http\Controllers\IngredientCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -79,8 +80,20 @@ Route::middleware('auth')->group(function () {
 
     //Dashboard :
     Route::get('/dashboards', [DashboardController::class, 'view'])->name('dashboards');
-    
 
+    //ingredients 
+    Route::get('/ingredients', [IngredientController::class, 'view'])->name('ingredients');
+    Route::get('/ingredientAdd', [IngredientController::class, 'addIngredient'])->name('ingredientAdd');
+    Route::post('/ingredientsAdd', [IngredientController::class, 'postaddIngredient']);
+   
+
+    //Ingredient_category :
+    Route::get('/ingredientCategories', [IngredientCategoryController::class, 'view'])->name('ingredientCategories');
+    Route::get('/ingredientCategoryAdd', [IngredientCategoryController::class, 'addIngredientCategoty'])->name('ingredientCategoryAdd');
+    Route::post('/ingredientcategoriesAdd', [IngredientCategoryController::class, 'postaddIngredientCategories']);
+    Route::get('/clearCart', [ProductController::class, 'clearCart'])->name('clearCart');
+    Route::get('/productCheckout', [ProductController::class, 'productCheckout'])->name('productCheckout');
+    Route::get('/productDetails', [ProductController::class, 'productDetails'])->name('productDetails');
     
     
 });
