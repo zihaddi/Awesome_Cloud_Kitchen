@@ -69,7 +69,7 @@ Admin :
   ![13 edit cooking category](https://user-images.githubusercontent.com/108587235/217187402-6c36383d-4d1c-4e4e-82bd-960b6e917e77.jpg)
     
     14.All cooking Itams :
-    ![14 all cooking items ](https://user-images.githubusercontent.com/108587235/217187448-60f8e1e8-3a86-4728-b4e8-f2e109da4e01.jpg)
+  ![14 all cooking items ](https://user-images.githubusercontent.com/108587235/217187448-60f8e1e8-3a86-4728-b4e8-f2e109da4e01.jpg)
 
     15.Add Cooking Items :
     
