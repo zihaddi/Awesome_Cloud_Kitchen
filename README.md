@@ -34,8 +34,8 @@ Admin :
     
     5.Add city :
     
-    ![5 add city](https://user-images.githubusercontent.com/108587235/217186891-73969d0c-9b8e-43a4-82af-43c25b73fa10.jpg)
-    
+    ![5 add city](https://user-images.githubusercontent.com/108587235/217188196-94264c49-07c4-4e3b-b749-c0c2f9d335ce.jpg)
+
     6.Add Thana :
     
     ![6 add thana](https://user-images.githubusercontent.com/108587235/217186928-433d15f6-f152-4a17-8307-6d85a1763b39.jpg)
