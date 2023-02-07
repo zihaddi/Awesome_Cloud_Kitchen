@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+This Is Awesome Cloud Kitchen Project:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Features of Laravel Admin Panel :
 
-## About Laravel
+Users :
+1.Have role : Customer , Admin , Vendor , Delivery Man
+2.User information are crud.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Admin :
+  1.Location Management : Admin can add Country , City , Thana , Area from backend
+  2.Ingredients :
+       Category : Ingredients Category can be add , edit , details , delete
+       Ingredients : In every category there are ingredients that can be add , edit , detail ,delete
+  3.Cooking Items :
+       Category : Cooking category can be add , edit , details , delete
+       Cooking Items : In every category there are cooking items that has ingredients.
+       
+   Screenshots :
+   1.All users :
+   
+   ![1](https://user-images.githubusercontent.com/108587235/217183880-9e8e8b63-c62a-43b9-9edc-7df860f64047.jpg)
+   
+   2.Add Users :
+   
+   ![2](https://user-images.githubusercontent.com/108587235/217184126-07fd0182-449a-4caf-a669-0a733e229f7e.jpg)
+   
+   3.Location Management :
+   
+   ![3](https://user-images.githubusercontent.com/108587235/217186798-0b160d8e-27f4-45a5-bf7e-d0d2e48d5484.jpg)
+   
+   4.Add country :
+   
+   ![4 add country](https://user-images.githubusercontent.com/108587235/217186845-14214140-ec64-4d50-b0c7-10f7f26bc86f.jpg)
+    
+    5.Add city :
+    
+    ![5 add city](https://user-images.githubusercontent.com/108587235/217186891-73969d0c-9b8e-43a4-82af-43c25b73fa10.jpg)
+    
+    6.Add Thana :
+    
+    ![6 add thana](https://user-images.githubusercontent.com/108587235/217186928-433d15f6-f152-4a17-8307-6d85a1763b39.jpg)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+     7.All Ingredients Category :
+     
+     ![7 all ingredients category](https://user-images.githubusercontent.com/108587235/217186992-0b994d22-09f0-49e6-97c6-919e38a8809e.jpg)
+     
+     8.Ingredient Category Add :
+     
+     ![8 category add page](https://user-images.githubusercontent.com/108587235/217187058-68b26e58-05ca-4a1a-9d42-e59419057c37.jpg)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+     9.All Ingredients :
+     
+     ![9 all ingrediets](https://user-images.githubusercontent.com/108587235/217187114-c54595a2-457b-4d50-8b97-22bbe815bcfc.jpg)
+     
+     10.Add Ingredients :
+     
+     ![10 add ingredients](https://user-images.githubusercontent.com/108587235/217187176-d3de9bab-93a5-459d-ac85-8f4abf727aa2.jpg)
 
-## Learning Laravel
+    11.All Cooking Categories :
+    
+   ![11 all cooking categories](https://user-images.githubusercontent.com/108587235/217187254-5112a82e-e240-4142-b764-784ac6b4ff4e.jpg)
+     
+    12.After Clicking Details :
+    
+    ![12 after clicking details](https://user-images.githubusercontent.com/108587235/217187343-fd68810f-dcc6-498a-9c64-768dd06b56af.jpg)
+    
+    13.Edit Cooking Category :
+    
+    ![13 edit cooking category](https://user-images.githubusercontent.com/108587235/217187402-6c36383d-4d1c-4e4e-82bd-960b6e917e77.jpg)
+    
+    14.All cooking Itams :
+    ![14 all cooking items ](https://user-images.githubusercontent.com/108587235/217187448-60f8e1e8-3a86-4728-b4e8-f2e109da4e01.jpg)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+    15.Add Cooking Items :
+    
+    ![15 add cooking items](https://user-images.githubusercontent.com/108587235/217187559-cad266cd-8acd-4f2c-aad4-886de4f916f2.jpg)
+    
+    
+    16.Cooking Items Details :
+    
+    ![16 cooking item details](https://user-images.githubusercontent.com/108587235/217187626-f7811efa-ce68-4dd8-9d1a-b3e1d63f783b.jpg)
+    
+    17.Edit Cooking Items :
+    
+    ![17 edit cooking item](https://user-images.githubusercontent.com/108587235/217187716-1b757b26-6e6f-42df-bdee-196524b572c2.jpg)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    
